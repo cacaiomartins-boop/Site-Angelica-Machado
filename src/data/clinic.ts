@@ -9,10 +9,10 @@ export const clinic = {
   instagram: "@angelicathiengo_psi",
   instagramUrl: "https://www.instagram.com/angelicathiengo_psi",
   doctoraliaUrl: "https://www.doctoralia.com.br/angelica-thiengo-machado/psicanalista-terapeuta-complementar/niteroi",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Avenida+Central+Ewerton+Xavier+2101+Itaipu+Niteroi",
-  address: "Avenida Central Ewerton Xavier, 2101 - sala 227 · Itaipu, Niterói - RJ, 24340-105",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi",
+  address: "Avenida Ewerton Xavier, 2101/sl. 227 - Itaipu - Niterói-RJ · CEP 24340-105 · Shopping Ibiza",
   office: "Espaço Terapêutico Equilíbrio e Afeto",
-  mapEmbed: "https://www.google.com/maps?q=Avenida+Central+Ewerton+Xavier+2101+Itaipu+Niteroi+RJ&output=embed",
+  mapEmbed: "https://www.google.com/maps?q=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi+RJ&output=embed",
   // Vídeo POV do consultório: coloque o arquivo em public/video/consultorio.mp4
   // (ou cole um link do YouTube). Deixe vazio para mostrar o espaço reservado.
   video: { src: "/video/consultorio.mp4", poster: "/img/video-poster.jpg", title: "Conheça o consultório por dentro" },
@@ -37,7 +37,7 @@ export const symptoms = [
 
 export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
-  lead: "Psicanalista Clínica e Terapeuta Complementar com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
+  lead: "Psicanalista e terapeuta sistêmica familiar com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
     "Atuo com base na **Psicanálise Junguiana** e nos Estudos Sistêmicos e Constelações Familiares, integrando técnicas que auxiliam na compreensão profunda dos vínculos familiares e das dores emocionais.",
@@ -106,7 +106,7 @@ export const socials = [
   { id: "instagram", label: "Instagram", url: clinic.instagramUrl },
   { id: "facebook", label: "Facebook", url: "https://www.facebook.com/juntoscomoevangelho" },
   { id: "youtube", label: "YouTube", url: "https://www.youtube.com/@angelicathiengopsicanalista" },
-  { id: "tiktok", label: "TikTok", url: "" },
+  { id: "tiktok", label: "TikTok", url: "https://www.tiktok.com/@angelicathiengo_psi" },
   { id: "linkedin", label: "LinkedIn", url: "" },
 ];
 

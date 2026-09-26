@@ -7,7 +7,7 @@ export default function Symptoms() {
     <section className="bg-white py-12 md:py-20">
       <div className="mx-auto max-w-[1100px] px-5 text-center">
         <div data-reveal>
-        <p className="eyebrow text-wine">Reconheço você</p>
+        <p className="eyebrow text-wine">Eu vejo você</p>
         <h2 className="mt-3 font-serif text-3xl text-teal-ink md:text-4xl leading-tight">Talvez você esteja sentindo…</h2>
         <p className="mt-4 text-sm leading-relaxed text-teal-text">Desafios e dores que você não precisa enfrentar em silêncio ou em solidão.</p>
         </div>
