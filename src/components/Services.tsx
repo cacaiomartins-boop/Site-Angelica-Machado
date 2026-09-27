@@ -22,7 +22,7 @@ export default function Services() {
               </div>
               <p className="mt-4 flex-1 text-[13.5px] leading-[1.75] text-teal-text">{s.text}</p>
               <div className="mt-6 flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-teal-mist px-3 py-1 text-[11px] text-teal-ink">{s.unit}</span>
+                {s.unit && <span className="rounded-full bg-teal-mist px-3 py-1 text-[11px] text-teal-ink">{s.unit}</span>}
                 <span className="rounded-full bg-teal-mist px-3 py-1 text-[11px] text-teal-ink">{s.mode}</span>
               </div>
               {s.packageNote && <p className="mt-2 text-[11px] font-medium text-wine">{s.packageNote}</p>}
