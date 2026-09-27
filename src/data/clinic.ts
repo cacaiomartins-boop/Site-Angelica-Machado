@@ -55,10 +55,10 @@ export const about = {
 };
 
 export const services = [
-  { title: "Consulta Psicanalítica", price: "R$ 150", unit: "Sessão de 50 min", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial (Niterói) ou Online" },
-  { title: "Terapia sistêmica familiar", price: "R$ 150", unit: "Sessão semanal", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial · Itaipu / Online" },
-  { title: "Constelação Sistêmica Familiar", price: "Sob consulta", unit: "Sessão temática individual", text: "Abordagem terapêutica profunda para olhar emaranhados familiares, padrões repetitivos ancestrais, dificuldades em relacionamentos e bloqueios emocionais.", mode: "Presencial ou Online" },
-  { title: "Suporte ao Luto e Luto Pet", price: "R$ 150", unit: "Sessão de 50 min", text: "Espaço de acolhimento sensível para a dor da perda de pessoas queridas ou de animais de estimação, validando sentimentos sem julgamentos.", mode: "Presencial · Niterói / Online" },
+  { title: "Consulta Psicanalítica", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Terapia sistêmica familiar", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Constelação Sistêmica Familiar", price: "Sob consulta", priceNote: "Sessão temática", unit: "50 min · Semanal", packageNote: "", text: "Abordagem terapêutica profunda para olhar emaranhados familiares, padrões repetitivos ancestrais, dificuldades em relacionamentos e bloqueios emocionais.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Suporte ao Luto e Luto Pet", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Espaço de acolhimento sensível para a dor da perda de pessoas queridas ou de animais de estimação, validando sentimentos sem julgamentos.", mode: "Presencial em Niterói (Itaipu) e online" },
 ];
 
 export const included = [
