@@ -1,4 +1,4 @@
-import { clinic, waLink } from "../data/clinic";
+import { clinic } from "../data/clinic";
 import Logo from "./Logo";
 
 const links = [
@@ -22,7 +22,7 @@ export default function Header() {
             <a key={h} href={h} data-nav className="transition hover:text-[#f7e8cc]">{l}</a>
           ))}
         </nav>
-        <a href={waLink()} target="_blank" rel="noreferrer" className="rounded-full bg-wine px-4 py-1.5 text-xs font-medium text-white transition hover:bg-wine-dark md:text-[13px]">Agendar</a>
+        <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="rounded-full bg-wine px-4 py-1.5 text-xs font-medium text-white transition hover:bg-wine-dark md:text-[13px]">Agendar</a>
       </div>
     </header>
   );

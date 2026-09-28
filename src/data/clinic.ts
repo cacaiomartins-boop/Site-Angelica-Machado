@@ -39,6 +39,7 @@ export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
   lead: "Psicanalista e terapeuta sistêmica familiar com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
+    "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
     "Atuo com base na **Psicanálise Junguiana** e nos Estudos Sistêmicos e Constelações Familiares, integrando técnicas que auxiliam na compreensão profunda dos vínculos familiares e das dores emocionais.",
     "O atendimento é estruturado tanto de forma presencial no Espaço Terapêutico Equilíbrio e Afeto, em Niterói, quanto **online** via Google Meet com flexibilidade para pacientes em todo o Brasil e no exterior.",
@@ -50,8 +51,9 @@ export const about = {
     "Especialização em Psicanálise Junguiana · Sociedade Brasileira de Psicanálise-ES",
     "Especialização em Estudos Sistêmicos e Constelações Familiares · Academia Internacional de Ciências Sistêmicas",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
+    "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
-  tags: ["Psicanálise Clínica", "Psicanálise Junguiana", "Constelações Familiares", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets"],
+  tags: ["Psicanálise Clínica", "Psicanálise Junguiana", "Constelações Familiares", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
 };
 
 export const services = [
