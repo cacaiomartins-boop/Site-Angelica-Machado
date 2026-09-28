@@ -9,7 +9,9 @@ export const clinic = {
   instagram: "@angelicathiengo_psi",
   instagramUrl: "https://www.instagram.com/angelicathiengo_psi",
   doctoraliaUrl: "https://www.doctoralia.com.br/angelica-thiengo-machado/psicanalista-terapeuta-complementar/niteroi",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi",
+  mapsUrl: "https://www.google.com/maps/place/Espa%C3%A7o+Terap%C3%AAutico+Equil%C3%ADbrio+e+Afeto/data=!4m2!3m1!1s0x0:0x8ce8f80c33d4f44a?sa=X&ved=1t:2428&ictx=111",
+  // Mesma ficha do Google Meu Negócio, com o parâmetro que abre direto a tela de escrever avaliação.
+  googleReviewUrl: "https://www.google.com/maps/place/Espa%C3%A7o+Terap%C3%AAutico+Equil%C3%ADbrio+e+Afeto/data=!4m2!3m1!1s0x0:0x8ce8f80c33d4f44a?sa=X&ved=1t:2428&ictx=111&action=write-review",
   address: "Avenida Ewerton Xavier, 2101/sl. 227 - Itaipu - Niterói-RJ · CEP 24340-105 · Shopping Ibiza",
   office: "Espaço Terapêutico Equilíbrio e Afeto",
   mapEmbed: "https://www.google.com/maps?q=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi+RJ&output=embed",

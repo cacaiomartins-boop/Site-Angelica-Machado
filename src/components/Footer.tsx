@@ -1,4 +1,4 @@
-import { ArrowUp, Car, Facebook, HeartHandshake, Instagram, Linkedin, MapPin, Music2, Video, Youtube } from "lucide-react";
+import { ArrowUp, Car, Facebook, HeartHandshake, Instagram, Linkedin, MapPin, Music2, Star, Video, Youtube } from "lucide-react";
 import { clinic, modalities, socials, waLink } from "../data/clinic";
 
 const socialIcons: Record<string, typeof Instagram> = { instagram: Instagram, facebook: Facebook, youtube: Youtube, tiktok: Music2, linkedin: Linkedin };
@@ -34,6 +34,13 @@ export default function Footer() {
                   );
                 })}
               </ul>
+              <a href={clinic.googleReviewUrl} target="_blank" rel="noreferrer" className="group mt-6 flex items-center gap-3 rounded-2xl bg-teal-mist p-4 text-left transition hover:bg-teal/15">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-wine shadow-sm"><Star className="h-5 w-5" strokeWidth={1.6} /></span>
+                <span>
+                  <span className="block text-sm font-semibold text-teal-ink">Gostou do atendimento?</span>
+                  <span className="mt-0.5 block text-xs font-medium text-wine group-hover:underline">Avaliar no Google →</span>
+                </span>
+              </a>
             </div>
             <div data-reveal="right" className="relative">
               <div className="absolute -bottom-3 -right-3 hidden h-full w-full rounded-3xl bg-[#f0d9b5]/50 md:block" />
