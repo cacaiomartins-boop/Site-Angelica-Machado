@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="mx-auto flex max-w-[1100px] flex-col items-center gap-3 px-5 text-center md:flex-row md:justify-between md:text-left">
           <div>
             <p className="font-serif text-base leading-tight">{clinic.name}</p>
-            <p className="text-[10px] text-white/70">Psicanalista e Terapeuta Sistêmica Familiar · {clinic.registry}</p>
+            <p className="text-[10px] text-white/70">Psicanalista Clínica · Especialista em Psicanálise Junguiana · {clinic.registry}</p>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[11px] text-white/75">
             <a href="#" className="hover:text-white">Privacidade</a>

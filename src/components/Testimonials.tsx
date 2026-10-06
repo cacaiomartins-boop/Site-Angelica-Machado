@@ -13,7 +13,7 @@ export default function Testimonials() {
           <span className="tracking-widest text-amber-500">★★★★★</span> 26 avaliações verificadas com nota máxima no Doctoralia
         </p>
         </div>
-        <div className="-mx-5 mt-10 no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 text-left md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0">
+        <div className="-mx-5 mt-10 no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 text-left md:mx-auto md:grid md:max-w-[760px] md:grid-cols-2 md:gap-5 md:overflow-visible md:px-0">
           {testimonials.map((t) => (
             <figure key={t.name} data-reveal className="lift flex w-[82%] shrink-0 snap-center flex-col rounded-2xl bg-white p-6 shadow-sm md:w-auto">
               <span className="text-xs tracking-widest text-amber-500">★★★★★</span>

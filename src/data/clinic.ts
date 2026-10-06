@@ -39,11 +39,11 @@ export const symptoms = [
 
 export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
-  lead: "Psicanalista e terapeuta sistêmica familiar com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
+  lead: "Psicanalista clínica, especialista em **Psicanálise Junguiana**, com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
-    "Atuo com base na **Psicanálise Junguiana** e nos Estudos Sistêmicos e Constelações Familiares, integrando técnicas que auxiliam na compreensão profunda dos vínculos familiares e das dores emocionais.",
+    "Atuo com base na **Psicanálise Junguiana**, que auxilia na compreensão profunda dos vínculos afetivos, dos símbolos e das dores emocionais.",
     "O atendimento é estruturado tanto de forma presencial no Espaço Terapêutico Equilíbrio e Afeto, em Niterói, quanto **online** via Google Meet com flexibilidade para pacientes em todo o Brasil e no exterior.",
   ],
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
@@ -51,17 +51,14 @@ export const about = {
   training: [
     "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
     "Especialização em Psicanálise Junguiana · Sociedade Brasileira de Psicanálise-ES",
-    "Especialização em Estudos Sistêmicos e Constelações Familiares · Academia Internacional de Ciências Sistêmicas",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
-  tags: ["Psicanálise Clínica", "Psicanálise Junguiana", "Constelações Familiares", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
+  tags: ["Psicanálise Clínica", "Psicanálise Junguiana", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
 };
 
 export const services = [
-  { title: "Consulta Psicanalítica", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial em Niterói (Itaipu) e online" },
-  { title: "Terapia sistêmica familiar", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial em Niterói (Itaipu) e online" },
-  { title: "Constelação Sistêmica Familiar", price: "Sob consulta", priceNote: "Sessão temática", unit: "", packageNote: "", text: "Abordagem terapêutica profunda para olhar emaranhados familiares, padrões repetitivos ancestrais, dificuldades em relacionamentos e bloqueios emocionais.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Consulta Psicanalítica Junguiana", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial em Niterói (Itaipu) e online" },
   { title: "Suporte ao Luto e Luto Pet", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Espaço de acolhimento sensível para a dor da perda de pessoas queridas ou de animais de estimação, validando sentimentos sem julgamentos.", mode: "Presencial em Niterói (Itaipu) e online" },
 ];
 
@@ -80,7 +77,6 @@ export const benefits = [
 
 export const testimonials = [
   { name: "Erika", text: "A Angélica é uma ótima profissional, atenciosa e pontual. Muito grata por tê-la encontrado! Obrigada por tanto acolhimento." },
-  { name: "Juliana Souza", text: "A experiência da Constelação Familiar foi sensacional. O direcionamento acolhedor, comunicação e escuta ativa da Angélica me deixou super à vontade de me abrir. Gratidão!" },
   { name: "Rafael Gonçalves", text: "Profissional fantástica! Esclarece e desenvolve muito bem os pontos trazidos na sessão. É atenciosa, acolhedora, direta e profunda nas análises. Cada sessão é sempre um ganho." },
 ];
 
@@ -90,7 +86,7 @@ export const faq = [
   { q: "Como funcionam as sessões?", a: "As sessões têm duração de 50 minutos. Na primeira consulta conhecemos sua história e suas principais queixas, e a partir dela combinamos o ritmo do acompanhamento, geralmente semanal." },
   { q: "Você atende online? Funciona tão bem quanto presencial?", a: "Sim. O atendimento online é feito por Google Meet, com a mesma escuta e profundidade do presencial, e atende pacientes em todo o Brasil e no exterior." },
   { q: "Quanto tempo dura um processo terapêutico?", a: "Não há um prazo fixo. Cada processo respeita a singularidade e o ritmo de quem se analisa, e a duração é conversada e reavaliada ao longo do caminho." },
-  { q: "Qual o valor das consultas e formas de pagamento aceitas?", a: "A sessão de 50 minutos custa R$ 150. A Constelação Sistêmica Familiar é valorizada sob consulta. Fale comigo pelo WhatsApp para conhecer as formas de pagamento." },
+  { q: "Qual o valor das consultas e formas de pagamento aceitas?", a: "A sessão de 50 minutos custa R$ 150. Fale comigo pelo WhatsApp para conhecer as formas de pagamento." },
   { q: "Aceita planos de saúde ou convênios médicos?", a: "O atendimento é particular. Consulte pelo WhatsApp sobre a emissão de recibo para eventual solicitação de reembolso ao seu plano." },
   { q: "Como faço para marcar uma consulta ou primeira conversa?", a: "É só chamar pelo WhatsApp. A primeira conversa é sem compromisso, para tirarmos dúvidas e escolhermos o melhor horário e formato." },
   { q: "Como funciona o sigilo e a privacidade das sessões?", a: "Tudo o que é dito nas sessões é estritamente confidencial, protegido pelo código de ética da prática psicanalítica." },
