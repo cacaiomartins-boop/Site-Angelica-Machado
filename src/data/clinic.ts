@@ -54,7 +54,7 @@ export const about = {
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
-  tags: ["Psicanálise Clínica", "Psicanálise Junguiana", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
+  tags: ["Psicanálise Clínica", "Análise Junguiana", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
 };
 
 export const services = [
