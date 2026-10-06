@@ -39,11 +39,11 @@ export const symptoms = [
 
 export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
-  lead: "Psicanalista clínica, especialista em **Psicanálise Junguiana**, com registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
+  lead: "Psicanalista clínica, com especialização **Junguiana** e registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
-    "Atuo com base na **Psicanálise Junguiana**, que auxilia na compreensão profunda dos vínculos afetivos, dos símbolos e das dores emocionais.",
+    "Atuo com base na **análise Junguiana**, que auxilia na compreensão profunda dos vínculos afetivos, dos símbolos e das dores emocionais.",
     "O atendimento é estruturado tanto de forma presencial no Espaço Terapêutico Equilíbrio e Afeto, em Niterói, quanto **online** via Google Meet com flexibilidade para pacientes em todo o Brasil e no exterior.",
   ],
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
