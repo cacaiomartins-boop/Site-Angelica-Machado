@@ -6,7 +6,7 @@ import { useEffect } from "react";
  * - barra de progresso, sombra do cabeçalho e botão "topo" via atributos no <html>
  * - destaca no menu a seção visível (scrollspy)
  */
-export default function useScrollFx() {
+export default function useScrollFx(routeKey: string) {
   useEffect(() => {
     const root = document.documentElement;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -55,10 +55,11 @@ export default function useScrollFx() {
     window.addEventListener("resize", onScroll, { passive: true });
 
     // 3) Scrollspy do menu
-    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("a[data-nav]"));
+    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("a[data-nav^='#']"));
     const sections = links
-      .map((a) => document.querySelector<HTMLElement>(a.dataset.nav!))
+      .map((a) => document.getElementById((a.dataset.nav ?? "").slice(1)))
       .filter((s): s is HTMLElement => !!s);
+    links.forEach((a) => (a.dataset.active = "false"));
     const spy = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -77,5 +78,5 @@ export default function useScrollFx() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, []);
+  }, [routeKey]);
 }

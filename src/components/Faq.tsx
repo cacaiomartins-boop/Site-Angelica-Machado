@@ -19,7 +19,7 @@ export default function Faq() {
                 {f.q}
                 {open === i ? <X className="h-4 w-4 shrink-0 text-white" /> : <Plus className="h-4 w-4 shrink-0" />}
               </button>
-              <div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${open === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}><div className="overflow-hidden"><p className="pb-4 pr-8 text-[13px] leading-[1.7] text-white/90">{f.a}</p></div></div>
+              <div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${open === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}><div className="overflow-hidden"><div className="space-y-3 pb-4 pr-8 text-[13px] leading-[1.7] text-white/90">{f.a.split("\n\n").map((p) => <p key={p}>{p}</p>)}</div></div></div>
             </div>
           ))}
         </div>

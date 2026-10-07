@@ -43,14 +43,15 @@ export const about = {
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
-    "Atuo com base na **análise Junguiana**, que auxilia na compreensão profunda dos vínculos afetivos, dos símbolos e das dores emocionais.",
+    "Atuo com base na **análise Junguiana** e na **abordagem sistêmica familiar**, duas lentes que se complementam para olhar a sua mente profunda sem esquecer o contexto e a história de onde você veio.",
     "O atendimento é estruturado tanto de forma presencial no Espaço Terapêutico Equilíbrio e Afeto, em Niterói, quanto **online** via Google Meet com flexibilidade para pacientes em todo o Brasil e no exterior.",
   ],
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
   quoteAuthor: "Carl G. Jung",
   training: [
     "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
-    "Especialização em Psicanálise Junguiana · Sociedade Brasileira de Psicanálise-ES",
+    "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES · 360h",
+    "Tenho formação em Terapia Sistêmica Familiar, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
@@ -59,6 +60,7 @@ export const about = {
 
 export const services = [
   { title: "Consulta Psicanalítica Junguiana", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Terapia sistêmica familiar", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial em Niterói (Itaipu) e online" },
   { title: "Suporte ao Luto e Luto Pet", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Espaço de acolhimento sensível para a dor da perda de pessoas queridas ou de animais de estimação, validando sentimentos sem julgamentos.", mode: "Presencial em Niterói (Itaipu) e online" },
 ];
 
@@ -82,6 +84,7 @@ export const testimonials = [
 
 // TODO: confirmar/ajustar as respostas (só a primeira veio do layout aprovado)
 export const faq = [
+  { q: "Como funciona a minha abordagem clínica?", a: "No meu consultório, o seu processo terapêutico é conduzido através de duas grandes lentes que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica familiar.\n\nAtravés da visão de Carl Jung, mergulhamos no seu inconsciente, olhando para os seus sonhos, complexos e o seu processo de busca por quem você realmente é (individuação).\n\nParalelamente, com a minha formação pela Academia Internacional de Ciências Sistêmicas, trago o olhar da terapia sistêmica.\n\nUnir essas duas frentes significa olhar para a sua mente profunda sem esquecer o contexto e a história de onde você veio. É um convite para decifrar a si mesmo e se reconciliar com as suas raízes." },
   { q: "Qual a diferença entre psicanálise e terapia tradicional?", a: "A psicanálise vai além dos sintomas imediatos: ela busca compreender a origem inconsciente dos sentimentos, traumas e padrões repetitivos que você vive, promovendo uma transformação duradoura." },
   { q: "Como funcionam as sessões?", a: "As sessões têm duração de 50 minutos. Na primeira consulta conhecemos sua história e suas principais queixas, e a partir dela combinamos o ritmo do acompanhamento, geralmente semanal." },
   { q: "Você atende online? Funciona tão bem quanto presencial?", a: "Sim. O atendimento online é feito por Google Meet, com a mesma escuta e profundidade do presencial, e atende pacientes em todo o Brasil e no exterior." },
@@ -121,3 +124,82 @@ export const infoCard = {
     { label: "Atendimento", value: "Adultos · Brasil e exterior" },
   ],
 };
+
+
+// ---------- Página "Formação e trajetória" (/formacao) ----------
+export const approach = {
+  eyebrow: "Minha abordagem",
+  title: "Como funciona a minha abordagem clínica?",
+  intro: "No meu consultório, o seu processo terapêutico é conduzido através de **duas grandes lentes** que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica familiar.",
+  lenses: [
+    {
+      kicker: "A lente da mente profunda",
+      name: "Análise Junguiana",
+      text: "Através da visão de Carl Jung, mergulhamos no seu inconsciente, olhando para os seus sonhos, complexos e o seu processo de busca por quem você realmente é (individuação).",
+      chips: ["Sonhos", "Complexos", "Individuação"],
+    },
+    {
+      kicker: "A lente das suas raízes",
+      name: "Abordagem sistêmica familiar",
+      text: "Paralelamente, com a minha formação pela Academia Internacional de Ciências Sistêmicas, trago o olhar da terapia sistêmica: a compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+      chips: ["Indivíduos", "Casais", "Famílias"],
+    },
+  ],
+  closing: "Unir essas duas frentes significa olhar para a sua **mente profunda** sem esquecer o contexto e a história de onde você veio. É um convite para decifrar a si mesmo e se reconciliar com as suas **raízes**.",
+};
+
+// Para esconder o certificado de um item, apague a linha "image".
+export const credentials = [
+  {
+    id: "junguiana",
+    period: "Mar/2024 – Fev/2026",
+    title: "Especialização Junguiana",
+    org: "Sociedade Brasileira de Psicanálise (SBP)",
+    detail: "Curso de Especialização em Psicanálise Junguiana · título de Especialista Junguiano.",
+    hours: "360h",
+    image: "/img/cert/junguiana.jpg",
+  },
+  {
+    id: "sistemica",
+    period: "Nov/2025",
+    title: "Formação em Terapia Sistêmica Familiar",
+    org: "Academia Internacional de Ciências Sistêmicas (AICS)",
+    detail: "Nível Avançado · formação híbrida (presencial e EAD) · Turma VII, Niterói. Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+    hours: "200h",
+    image: "/img/cert/sistemica-aics.jpg",
+  },
+  {
+    id: "clinico",
+    period: "Out/2023",
+    title: "Psicanalista Clínico",
+    org: "Sociedade Brasileira de Psicanálise (SBP)",
+    detail: "Título de Psicanalista Clínico. Curso amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
+    hours: "",
+    image: "/img/cert/psicanalista-clinico.jpg",
+  },
+  {
+    id: "transpessoal",
+    period: "Complementar",
+    title: "Terapia Transpessoal e Interpretação dos Sonhos",
+    org: "Sociedade Brasileira de Psicanálise-ES",
+    detail: "Cursos complementares que ampliam a escuta clínica.",
+    hours: "",
+    image: "",
+  },
+  {
+    id: "rh",
+    period: "2009",
+    title: "Tecnólogo em Gestão de Recursos Humanos",
+    org: "Universidade Estácio de Sá · Niterói - RJ",
+    detail: "Curso Superior de Tecnologia. Um olhar a mais sobre pessoas, relações e ambientes de trabalho.",
+    hours: "",
+    image: "/img/cert/rh-estacio.jpg",
+  },
+];
+
+export const pageStats = [
+  { value: "360h", label: "Especialização Junguiana" },
+  { value: "200h", label: "Formação em Terapia Sistêmica" },
+  { value: "Desde 2021", label: "Atendendo em Niterói e online" },
+  { value: "5.0", label: "26 avaliações no Doctoralia" },
+];

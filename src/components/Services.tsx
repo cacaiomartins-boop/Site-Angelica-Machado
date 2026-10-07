@@ -11,8 +11,8 @@ export default function Services() {
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-white/95">Formatos de atendimento pensados para o seu momento de vida, com <span className="hl">escuta atenta</span> e livre de julgamentos.</p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {services.map((s) => (
-            <div key={s.title} data-reveal className="lift flex flex-col rounded-3xl bg-cream-card p-7">
+          {services.map((s, idx) => (
+            <div key={s.title} data-reveal className={`lift flex flex-col rounded-3xl bg-cream-card p-7 ${services.length % 2 === 1 && idx === services.length - 1 ? "md:col-span-2 md:mx-auto md:w-[calc(50%-0.625rem)]" : ""}`}>
               <div className="flex items-start justify-between gap-4">
                 <h3 className="font-serif text-[22px] leading-snug text-teal-ink">{s.title}</h3>
                 <div className="shrink-0 text-right">

@@ -81,7 +81,7 @@ export default function Footer() {
           <p className="text-white/60">© 2026 {clinic.name} · {clinic.registry} · Todos os direitos reservados</p>
         </div>
       </footer>
-      <a href="#inicio" aria-label="Voltar ao topo" className="back-top fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-teal text-white shadow-lg ring-1 ring-white/20"><ArrowUp className="h-5 w-5" /></a>
+      <a href="#inicio" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0 }); }} aria-label="Voltar ao topo" className="back-top fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-teal text-white shadow-lg ring-1 ring-white/20"><ArrowUp className="h-5 w-5" /></a>
     </>
   );
 }
