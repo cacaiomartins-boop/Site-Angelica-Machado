@@ -5,7 +5,7 @@ import { Link } from "../lib/router";
 import Rich from "../components/Rich";
 import { WhatsAppIcon } from "../components/Icons";
 
-type Credential = (typeof credentials)[number];
+type Viewer = { title: string; org: string; image: string };
 
 /** Duas lentes que se encontram em "Você" (ilustração em SVG, usa as cores do site). */
 function Venn() {
@@ -35,7 +35,7 @@ function Venn() {
   );
 }
 
-function Lightbox({ item, onClose }: { item: Credential; onClose: () => void }) {
+function Lightbox({ item, onClose }: { item: Viewer; onClose: () => void }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
@@ -60,7 +60,7 @@ function Lightbox({ item, onClose }: { item: Credential; onClose: () => void }) 
 }
 
 export default function Formacao() {
-  const [open, setOpen] = useState<Credential | null>(null);
+  const [open, setOpen] = useState<Viewer | null>(null);
   const [lensA, lensB] = approach.lenses;
   const lenses = [
     { ...lensA, Icon: Moon, tone: "bg-teal" },
@@ -160,12 +160,19 @@ export default function Formacao() {
                     <p className="mt-2 text-[13px] leading-[1.7] text-teal-text">{c.detail}</p>
                   </div>
                   {c.image && (
-                    <button type="button" onClick={() => setOpen(c)} aria-label={`Ver certificado: ${c.title}`} className="group relative block shrink-0 overflow-hidden rounded-xl ring-1 ring-teal/20 sm:w-[190px]">
-                      <img src={c.image} alt="" loading="lazy" decoding="async" className="h-36 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 sm:h-28" />
-                      <span className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-teal-deep/75 via-transparent to-transparent pb-2">
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 text-[11px] font-medium text-teal-ink shadow"><Search className="h-3 w-3" /> Ver certificado</span>
-                      </span>
-                    </button>
+                    <div className="shrink-0 sm:w-[190px]">
+                      <button type="button" onClick={() => setOpen(c)} aria-label={`Ver certificado: ${c.title}`} className="group relative block w-full overflow-hidden rounded-xl ring-1 ring-teal/20">
+                        <img src={c.image} alt="" loading="lazy" decoding="async" className="h-36 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 sm:h-28" />
+                        <span className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-teal-deep/75 via-transparent to-transparent pb-2">
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 text-[11px] font-medium text-teal-ink shadow"><Search className="h-3 w-3" /> Ver certificado</span>
+                        </span>
+                      </button>
+                      {c.extras?.map((x) => (
+                        <button key={x.image} type="button" onClick={() => setOpen({ title: `${c.title} · ${x.label}`, org: c.org, image: x.image })} className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-full bg-teal-mist px-3 py-1.5 text-[11px] font-medium text-teal-ink ring-1 ring-teal/15 transition hover:bg-teal/15">
+                          <Search className="h-3 w-3" /> {x.label}
+                        </button>
+                      ))}
+                    </div>
                   )}
                 </article>
               </li>

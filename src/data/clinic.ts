@@ -49,9 +49,9 @@ export const about = {
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
   quoteAuthor: "Carl G. Jung",
   training: [
-    "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
+    "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES · 420h",
     "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES · 360h",
-    "Tenho formação em Terapia Sistêmica Familiar, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+    "Tenho formação em Terapia Sistêmica Familiar (400h), pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
@@ -148,34 +148,36 @@ export const approach = {
   closing: "Unir essas duas frentes significa olhar para a sua **mente profunda** sem esquecer o contexto e a história de onde você veio. É um convite para decifrar a si mesmo e se reconciliar com as suas **raízes**.",
 };
 
-// Para esconder o certificado de um item, apague a linha "image".
+// Para esconder um certificado, apague a linha "image" (ou o item em "extras").
 export const credentials = [
-  {
-    id: "junguiana",
-    period: "Mar/2024 – Fev/2026",
-    title: "Especialização Junguiana",
-    org: "Sociedade Brasileira de Psicanálise (SBP)",
-    detail: "Curso de Especialização em Psicanálise Junguiana · título de Especialista Junguiano.",
-    hours: "360h",
-    image: "/img/cert/junguiana.jpg",
-  },
-  {
-    id: "sistemica",
-    period: "Nov/2025",
-    title: "Formação em Terapia Sistêmica Familiar",
-    org: "Academia Internacional de Ciências Sistêmicas (AICS)",
-    detail: "Nível Avançado · formação híbrida (presencial e EAD) · Turma VII, Niterói. Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
-    hours: "200h",
-    image: "/img/cert/sistemica-aics.jpg",
-  },
   {
     id: "clinico",
     period: "Out/2023",
     title: "Psicanalista Clínico",
     org: "Sociedade Brasileira de Psicanálise (SBP)",
-    detail: "Título de Psicanalista Clínico. Curso amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
-    hours: "",
+    detail: "Formação em Psicanálise Clínica, a base de tudo: o estudo de Freud e da clínica psicanalítica, com análise individual e estágio supervisionado. Título de Psicanalista Clínico, amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
+    hours: "420h",
     image: "/img/cert/psicanalista-clinico.jpg",
+    extras: [{ label: "Grade curricular", image: "/img/cert/grade-psicanalise.jpg" }],
+  },
+  {
+    id: "junguiana",
+    period: "Mar/2024 – Fev/2026",
+    title: "Especialização Junguiana",
+    org: "Sociedade Brasileira de Psicanálise (SBP)",
+    detail: "Especialização que aprofunda a psicanálise a partir de Jung · título de Especialista Junguiano.",
+    hours: "360h",
+    image: "/img/cert/junguiana.jpg",
+  },
+  {
+    id: "sistemica",
+    period: "Abr/2025 – Nov/2025",
+    title: "Formação em Terapia Sistêmica Familiar",
+    org: "Academia Internacional de Ciências Sistêmicas (AICS)",
+    detail: "Níveis Básico e Avançado · formação híbrida (presencial e EAD). Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+    hours: "400h",
+    image: "/img/cert/sistemica-aics.jpg",
+    extras: [{ label: "Certificado Nível Básico", image: "/img/cert/sistemica-aics-basico.jpg" }],
   },
   {
     id: "transpessoal",
@@ -191,15 +193,15 @@ export const credentials = [
     period: "2009",
     title: "Tecnólogo em Gestão de Recursos Humanos",
     org: "Universidade Estácio de Sá · Niterói - RJ",
-    detail: "Curso Superior de Tecnologia. Um olhar a mais sobre pessoas, relações e ambientes de trabalho.",
+    detail: "Formação acadêmica tradicional, que amplia o olhar sobre pessoas, relações e ambientes de trabalho. Não exerço a profissão.",
     hours: "",
     image: "/img/cert/rh-estacio.jpg",
   },
 ];
 
 export const pageStats = [
+  { value: "420h", label: "Formação em Psicanálise Clínica" },
   { value: "360h", label: "Especialização Junguiana" },
-  { value: "200h", label: "Formação em Terapia Sistêmica" },
-  { value: "Desde 2021", label: "Atendendo em Niterói e online" },
+  { value: "400h", label: "Formação em Terapia Sistêmica" },
   { value: "5.0", label: "26 avaliações no Doctoralia" },
 ];
