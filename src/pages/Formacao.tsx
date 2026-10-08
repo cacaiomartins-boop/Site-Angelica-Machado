@@ -5,6 +5,9 @@ import { Link } from "../lib/router";
 import Rich from "../components/Rich";
 import { WhatsAppIcon } from "../components/Icons";
 
+type Extra = { label: string; image: string; thumb?: boolean };
+const thumbs = (c: { extras?: Extra[] }) => (c.extras ?? []).filter((x) => x.thumb);
+const buttons = (c: { extras?: Extra[] }) => (c.extras ?? []).filter((x) => !x.thumb);
 type Viewer = { title: string; org: string; image: string };
 
 /** Duas lentes que se encontram em "Você" (ilustração em SVG, usa as cores do site). */
@@ -160,14 +163,18 @@ export default function Formacao() {
                     <p className="mt-2 text-[13px] leading-[1.7] text-teal-text">{c.detail}</p>
                   </div>
                   {c.image && (
-                    <div className="shrink-0 sm:w-[190px]">
-                      <button type="button" onClick={() => setOpen(c)} aria-label={`Ver certificado: ${c.title}`} className="group relative block w-full overflow-hidden rounded-xl ring-1 ring-teal/20">
-                        <img src={c.image} alt="" loading="lazy" decoding="async" className="h-36 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 sm:h-28" />
-                        <span className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-teal-deep/75 via-transparent to-transparent pb-2">
-                          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 text-[11px] font-medium text-teal-ink shadow"><Search className="h-3 w-3" /> Ver certificado</span>
-                        </span>
-                      </button>
-                      {c.extras?.map((x) => (
+                    <div className={`shrink-0 ${"sm:w-[190px]"}`}>
+                      <div className={thumbs(c).length ? "grid gap-2" : ""}>
+                        {[{ label: c.imageLabel, title: c.title, image: c.image }, ...thumbs(c).map((x) => ({ label: x.label, title: `${c.title} · ${x.label}`, image: x.image }))].map((t) => (
+                          <button key={t.image} type="button" onClick={() => setOpen({ title: t.title, org: c.org, image: t.image })} aria-label={`Ver certificado: ${t.title}`} className="group relative block w-full overflow-hidden rounded-xl ring-1 ring-teal/20">
+                            <img src={t.image} alt="" loading="lazy" decoding="async" className="h-36 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 sm:h-28" />
+                            <span className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-teal-deep/75 via-transparent to-transparent pb-2">
+                              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-medium text-teal-ink shadow"><Search className="h-3 w-3" /> {t.label ?? "Ver certificado"}</span>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                      {buttons(c).map((x) => (
                         <button key={x.image} type="button" onClick={() => setOpen({ title: `${c.title} · ${x.label}`, org: c.org, image: x.image })} className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-full bg-teal-mist px-3 py-1.5 text-[11px] font-medium text-teal-ink ring-1 ring-teal/15 transition hover:bg-teal/15">
                           <Search className="h-3 w-3" /> {x.label}
                         </button>

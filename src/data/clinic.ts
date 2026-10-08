@@ -49,9 +49,9 @@ export const about = {
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
   quoteAuthor: "Carl G. Jung",
   training: [
-    "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES · 420h",
-    "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES · 360h",
-    "Tenho formação em Terapia Sistêmica Familiar (400h), pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+    "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
+    "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES",
+    "Tenho formação em Terapia Sistêmica Familiar, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
@@ -177,7 +177,8 @@ export const credentials = [
     detail: "Níveis Básico e Avançado · formação híbrida (presencial e EAD). Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     hours: "400h",
     image: "/img/cert/sistemica-aics.jpg",
-    extras: [{ label: "Certificado Nível Básico", image: "/img/cert/sistemica-aics-basico.jpg" }],
+    extras: [{ label: "Básico", image: "/img/cert/sistemica-aics-basico.jpg", thumb: true }],
+    imageLabel: "Avançado",
   },
   {
     id: "transpessoal",
