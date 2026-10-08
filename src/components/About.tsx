@@ -11,7 +11,7 @@ export default function About() {
         <div data-reveal="left" className="relative mx-auto hidden w-full max-w-[350px] md:block">
           <div className="absolute -bottom-4 -right-4 h-full w-full rounded-[28px] border border-[#f0d9b5]/60" />
           <Link to="/formacao" aria-label="Conhecer a trajetória e formação de Angélica" className="group relative block overflow-hidden rounded-[28px] shadow-2xl shadow-black/30 ring-1 ring-white/40">
-            <img src={clinic.images.heroHd} alt={clinic.name} className="aspect-[4/5] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" decoding="async" width={650} height={812} />
+            <img src={clinic.images.heroHd} srcSet={`${clinic.images.heroHdSm} 420w, ${clinic.images.heroHd} 650w`} sizes="350px" alt={clinic.name} className="aspect-[4/5] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" decoding="async" width={650} height={812} />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#2c6a55]/90 via-[#2c6a55]/50 to-transparent px-5 pb-5 pt-16">
               <p className="font-serif text-xl leading-tight text-white">{clinic.name}</p>
               <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.16em] text-[#f0d9b5]">Psicanalista · {clinic.registry}</p>
@@ -23,7 +23,7 @@ export default function About() {
         </div>
         <Link to="/formacao" aria-label="Conhecer a trajetória e formação de Angélica" data-reveal="zoom" className="relative mx-auto block w-full max-w-[300px] md:hidden">
           <div className="absolute -bottom-3 -right-3 h-full w-full rounded-full bg-[#f0d9b5]/40" />
-          <img src={clinic.images.hero} alt={clinic.name} loading="lazy" decoding="async" width={600} height={600} className="relative aspect-square w-full rounded-full border-[6px] border-white object-cover object-top shadow-2xl shadow-black/25" />
+          <img src={clinic.images.hero} srcSet={`${clinic.images.heroSm} 360w, ${clinic.images.hero} 600w`} sizes="300px" alt={clinic.name} loading="lazy" decoding="async" width={600} height={600} className="relative aspect-square w-full rounded-full border-[6px] border-white object-cover object-top shadow-2xl shadow-black/25" />
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white px-4 py-2 text-center shadow-lg">
             <p className="font-serif text-[15px] leading-none text-teal-ink">{clinic.name}</p>
             <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.14em] text-wine">Psicanalista · {clinic.registry}</p>

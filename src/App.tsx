@@ -5,10 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Formacao from "./pages/Formacao";
-
-const FORMACAO_TITLE = "Formação e trajetória | Angélica Thiengo Machado – Psicanalista em Niterói";
-const FORMACAO_DESC =
-  "Conheça a formação de Angélica Thiengo Machado: Psicanalista Clínico (SBP, 420h), Especialização Junguiana (360h), Formação em Terapia Sistêmica Familiar (400h) e a sua abordagem clínica.";
+import { applyPageMeta } from "./seo";
 
 export default function App() {
   const route = useRoute();
@@ -30,14 +27,8 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: samePage ? "smooth" : ("instant" as ScrollBehavior) });
   }, [route.key, page]);
 
-  // Título e descrição de cada página
-  const defaults = useRef<{ title: string; desc: string } | null>(null);
-  useEffect(() => {
-    const meta = document.querySelector('meta[name="description"]');
-    if (!defaults.current) defaults.current = { title: document.title, desc: meta?.getAttribute("content") ?? "" };
-    document.title = page === "formacao" ? FORMACAO_TITLE : defaults.current.title;
-    meta?.setAttribute("content", page === "formacao" ? FORMACAO_DESC : defaults.current.desc);
-  }, [page]);
+  // Título, descrição e canonical de cada página
+  useEffect(() => applyPageMeta(page), [page]);
 
   return (
     <>

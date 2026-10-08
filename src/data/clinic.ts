@@ -17,12 +17,14 @@ export const clinic = {
   mapEmbed: "https://www.google.com/maps?q=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi+RJ&output=embed",
   // Vídeo POV do consultório: coloque o arquivo em public/video/consultorio.mp4
   // (ou cole um link do YouTube). Deixe vazio para mostrar o espaço reservado.
-  video: { src: "/video/consultorio.mp4", poster: "/img/video-poster.jpg", title: "Conheça o consultório por dentro" },
+  video: { src: "/video/consultorio.mp4", poster: "/img/video-poster.webp", title: "Conheça o consultório por dentro" },
   images: {
-    heroHd: "/img/angelica-hd.jpg",
-    hero: "/img/angelica.jpg",
-    office: "/img/consultorio.jpg",
-    faqBg: "/img/consultorio.jpg",
+    heroHd: "/img/angelica-hd.webp",
+    hero: "/img/angelica.webp",
+    heroSm: "/img/angelica-360.webp",
+    heroHdSm: "/img/angelica-hd-420.webp",
+    office: "/img/consultorio.webp",
+    faqBg: "/img/consultorio.webp",
   },
 };
 
@@ -157,8 +159,8 @@ export const credentials = [
     org: "Sociedade Brasileira de Psicanálise (SBP)",
     detail: "Formação em Psicanálise Clínica, a base de tudo: o estudo de Freud e da clínica psicanalítica, com análise individual e estágio supervisionado. Título de Psicanalista Clínico, amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
     hours: "420h",
-    image: "/img/cert/psicanalista-clinico.jpg",
-    extras: [{ label: "Grade curricular", image: "/img/cert/grade-psicanalise.jpg" }],
+    image: "/img/cert/psicanalista-clinico.webp",
+    extras: [{ label: "Grade curricular", image: "/img/cert/grade-psicanalise.webp" }],
   },
   {
     id: "junguiana",
@@ -167,7 +169,7 @@ export const credentials = [
     org: "Sociedade Brasileira de Psicanálise (SBP)",
     detail: "Especialização que aprofunda a psicanálise a partir de Jung · título de Especialista Junguiano.",
     hours: "360h",
-    image: "/img/cert/junguiana.jpg",
+    image: "/img/cert/junguiana.webp",
   },
   {
     id: "sistemica",
@@ -176,8 +178,8 @@ export const credentials = [
     org: "Academia Internacional de Ciências Sistêmicas (AICS)",
     detail: "Níveis Básico e Avançado · formação híbrida (presencial e EAD). Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     hours: "400h",
-    image: "/img/cert/sistemica-aics.jpg",
-    extras: [{ label: "Básico", image: "/img/cert/sistemica-aics-basico.jpg", thumb: true }],
+    image: "/img/cert/sistemica-aics.webp",
+    extras: [{ label: "Básico", image: "/img/cert/sistemica-aics-basico.webp", thumb: true }],
     imageLabel: "Avançado",
   },
   {
@@ -196,7 +198,7 @@ export const credentials = [
     org: "Universidade Estácio de Sá · Niterói - RJ",
     detail: "Formação acadêmica tradicional, que amplia o olhar sobre pessoas, relações e ambientes de trabalho. Não exerço a profissão.",
     hours: "",
-    image: "/img/cert/rh-estacio.jpg",
+    image: "/img/cert/rh-estacio.webp",
   },
 ];
 

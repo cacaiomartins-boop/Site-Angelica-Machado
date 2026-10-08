@@ -3,3 +3,4 @@ dist
 .vercel
 .vite
 *.log
+dist-ssr

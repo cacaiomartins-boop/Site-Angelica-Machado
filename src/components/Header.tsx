@@ -27,7 +27,7 @@ export default function Header({ path }: { path: string }) {
             <Link key={h} to={"/" + h} data-nav={h} className="transition hover:text-[#f7e8cc]">{l}</Link>
           ))}
         </nav>
-        <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="rounded-full bg-wine px-4 py-1.5 text-xs font-medium text-white transition hover:bg-wine-dark md:text-[13px]">Agendar</a>
+        <a href={clinic.doctoraliaUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-wine px-4 py-1.5 text-xs font-medium text-white transition hover:bg-wine-dark md:text-[13px]">Agendar</a>
       </div>
     </header>
   );

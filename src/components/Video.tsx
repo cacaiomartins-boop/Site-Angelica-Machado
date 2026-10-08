@@ -34,7 +34,7 @@ export default function Video() {
           </ul>
 
           <div data-reveal className="order-4 grid grid-cols-2 gap-3 md:mt-6 md:flex md:flex-col">
-            <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="group col-span-2 flex items-center gap-3 rounded-xl bg-teal-mist p-3 ring-1 ring-teal-ink/10 transition hover:bg-teal/30 md:col-span-1">
+            <a href={clinic.doctoraliaUrl} target="_blank" rel="noopener noreferrer" className="group col-span-2 flex items-center gap-3 rounded-xl bg-teal-mist p-3 ring-1 ring-teal-ink/10 transition hover:bg-teal/30 md:col-span-1">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-wine text-white transition group-hover:bg-wine-dark"><CalendarCheck className="h-5 w-5" strokeWidth={1.7} /></span>
               <p className="text-[13px] leading-snug text-teal-ink">
                 <span className="block font-semibold">Agenda online</span>
@@ -54,7 +54,7 @@ export default function Video() {
                 </>
               );
               return url ? (
-                <a key={id} href={url} target="_blank" rel="noreferrer" className={cls + " transition hover:bg-teal/30"}>{inner}</a>
+                <a key={id} href={url} target="_blank" rel="noopener noreferrer" className={cls + " transition hover:bg-teal/30"}>{inner}</a>
               ) : (
                 <div key={id} className={cls + " opacity-70"}>{inner}</div>
               );

@@ -45,8 +45,8 @@ export default function Services() {
         </div>
         <div data-reveal="zoom" className="mt-10 text-center">
           <div className="flex flex-col items-stretch gap-5 sm:flex-row sm:items-center sm:justify-center sm:gap-3">
-            <a href={waLink()} target="_blank" rel="noreferrer" className="btn-wine justify-center">Quero começar</a>
-            <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-teal-mist px-6 py-3 text-sm font-medium text-teal-ink ring-1 ring-teal/20 transition hover:bg-teal/15">Agendar horário</a>
+            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="btn-wine justify-center">Quero começar</a>
+            <a href={clinic.doctoraliaUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-teal-mist px-6 py-3 text-sm font-medium text-teal-ink ring-1 ring-teal/20 transition hover:bg-teal/15">Agendar horário</a>
           </div>
           <p className="mt-4 text-xs text-white/90">Primeira conversa sem compromisso via WhatsApp</p>
         </div>

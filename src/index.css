@@ -5,7 +5,6 @@
 /* Paleta principal do site: edite aqui (atualiza ao vivo) */
 :root {
   --teal: 56 110 86;
-  --teal-card: 56 110 86;
   --teal-deep: 56 110 86;
   --teal-ink: 37 77 63;
   --teal-text: 55 106 88;
@@ -18,11 +17,12 @@
 html { scroll-behavior: smooth; }
 body { @apply bg-cream font-sans text-teal-ink antialiased; }
 section[id] { scroll-margin-top: 56px; }
+/* Foco visível para quem navega pelo teclado (não aparece no clique do mouse) */
+a:focus-visible, button:focus-visible { outline: 2px solid rgb(var(--sienna)); outline-offset: 3px; }
 
 @layer components {
   .eyebrow { @apply text-[11px] font-medium uppercase tracking-[0.18em]; }
   .btn-wine { @apply inline-flex items-center gap-2 rounded-full bg-wine px-7 py-3 text-sm font-semibold text-white [text-shadow:0_1px_2px_rgba(110,50,15,0.45)] shadow-lg shadow-black/20 transition hover:bg-wine-dark; }
-  .btn-ghost { @apply inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-2.5 text-sm font-medium text-white ring-1 ring-white/20 transition hover:bg-white/20; }
 }
 
 .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
@@ -51,6 +51,11 @@ h2 { line-height: 1.2; }
 @keyframes kenburns { from { transform: scale(1.02); } to { transform: scale(1.12); } }
 .hero-in { opacity: 0; animation: fadeUp .8s cubic-bezier(.22,.61,.36,1) forwards; animation-delay: var(--hd, 0ms); }
 .hero-in-right { opacity: 0; animation: fadeRight .9s cubic-bezier(.22,.61,.36,1) .5s forwards; }
+/* Entrada do topo da página /formacao: mesmo efeito do "reveal", mas só com CSS (aparece sem esperar o JS) */
+@keyframes enterLeft { from { opacity: 0; transform: translateX(-32px); } to { opacity: 1; transform: none; } }
+@keyframes enterRight { from { opacity: 0; transform: translateX(32px); } to { opacity: 1; transform: none; } }
+.enter-left { opacity: 0; animation: enterLeft .7s cubic-bezier(.22,.61,.36,1) forwards; }
+.enter-right { opacity: 0; animation: enterRight .7s cubic-bezier(.22,.61,.36,1) .09s forwards; }
 .kenburns { animation: kenburns 24s ease-in-out infinite alternate; }
 
 /* Cabeçalho: sombra ao rolar, barra de progresso e link ativo */
@@ -75,7 +80,7 @@ html[data-far="true"] .back-top { opacity: 1; pointer-events: auto; transform: n
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .js [data-reveal], .hero-in, .hero-in-right { opacity: 1 !important; transform: none !important; }
+  .js [data-reveal], .hero-in, .hero-in-right, .enter-left, .enter-right { opacity: 1 !important; transform: none !important; }
 }
 
 /* hover dos cards (precisa vencer o estado .in do reveal) */

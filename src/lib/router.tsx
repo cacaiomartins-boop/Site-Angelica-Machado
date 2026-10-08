@@ -7,9 +7,14 @@ let counter = 0;
 
 export type Route = { path: string; hash: string; key: number };
 
+// No build (pré-renderização) não existe "window": a página é informada por setServerPath.
+let serverPath = "/";
+export const setServerPath = (p: string) => { serverPath = p; };
+const isBrowser = typeof window !== "undefined";
+
 const read = (): Route => ({
-  path: window.location.pathname.replace(/\/+$/, "") || "/",
-  hash: window.location.hash,
+  path: (isBrowser ? window.location.pathname : serverPath).replace(/\.html$/, "").replace(/\/(index)?$/, "") || "/",
+  hash: isBrowser ? window.location.hash : "",
   key: ++counter,
 });
 

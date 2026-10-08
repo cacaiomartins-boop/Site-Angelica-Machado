@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./Icons";
 export default function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#629a7f] pt-11 md:min-h-[640px] md:pt-14">
-      <img src={clinic.images.office} alt="" className="kenburns absolute inset-0 h-full w-full object-cover opacity-60" fetchPriority="high" decoding="async" />
+      <img src={clinic.images.office} alt="" className="kenburns absolute inset-0 h-full w-full object-cover opacity-60" {...({ fetchpriority: "high" } as object)} decoding="async" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#376f58]/70 via-[#3b7660]/52 to-[#376f58]/75" />
       <div className="absolute inset-0 hidden bg-gradient-to-r from-[#2f6553]/50 via-transparent to-transparent md:block" />
       <div className="relative mx-auto grid w-full max-w-[1180px] items-center gap-12 px-5 py-12 md:grid-cols-[1.3fr_0.7fr] md:px-8 md:py-20">
@@ -44,7 +44,7 @@ export default function Hero() {
           <p style={{"--hd":"0.4s"} as React.CSSProperties} className="hero-in mx-auto mt-6 max-w-lg text-[15px] font-medium leading-relaxed text-white [text-shadow:0_1px_10px_rgba(10,35,42,0.6)] md:mx-0 md:text-base">
             A psicanálise e a escuta clínica oferecem um caminho seguro para desatar os nós da <span className="font-semibold text-wine">ansiedade</span>, do <span className="font-semibold text-wine">luto</span> e das repetições emocionais inconscientes.
           </p>
-          <a href={waLink()} target="_blank" rel="noreferrer" style={{"--hd":"0.55s"} as React.CSSProperties} className="hero-in btn-wine mt-8 w-full justify-center !py-4 text-base sm:w-auto md:!py-3 md:text-sm"><WhatsAppIcon /> Vamos conversar?</a>
+          <a href={waLink()} target="_blank" rel="noopener noreferrer" style={{"--hd":"0.55s"} as React.CSSProperties} className="hero-in btn-wine mt-8 w-full justify-center !py-4 text-base sm:w-auto md:!py-3 md:text-sm"><WhatsAppIcon /> Vamos conversar?</a>
           <p style={{"--hd":"0.7s"} as React.CSSProperties} className="hero-in mt-4 text-xs font-medium text-[#f7e8cc] [text-shadow:0_1px_8px_rgba(10,35,42,0.6)]">Atendimento presencial em Niterói (Itaipu) e online para todo o Brasil e exterior</p>
         </div>
       </div>

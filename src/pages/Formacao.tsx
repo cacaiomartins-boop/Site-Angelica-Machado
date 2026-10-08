@@ -75,20 +75,20 @@ export default function Formacao() {
       {/* 1. Apresentação */}
       <section className="relative overflow-hidden bg-teal pb-14 pt-24 md:pb-20 md:pt-32">
         <div className="mx-auto grid max-w-[1100px] items-center gap-10 px-5 md:grid-cols-[0.8fr_1.4fr] md:gap-14">
-          <div data-reveal="left" className="relative mx-auto w-full max-w-[290px] md:max-w-[350px]">
+          <div className="enter-left relative mx-auto w-full max-w-[290px] md:max-w-[350px]">
             <div className="absolute -bottom-4 -right-4 h-full w-full rounded-[28px] border border-[#f0d9b5]/60" />
             <div className="relative overflow-hidden rounded-[28px] shadow-2xl shadow-black/30 ring-1 ring-white/40">
-              <img src={clinic.images.heroHd} alt={clinic.name} width={650} height={812} fetchPriority="high" decoding="async" className="aspect-[4/5] w-full object-cover object-top" />
+              <img src={clinic.images.heroHd} srcSet={`${clinic.images.heroHdSm} 420w, ${clinic.images.heroHd} 650w`} sizes="(min-width: 768px) 350px, 290px" alt={clinic.name} width={650} height={812} {...({ fetchpriority: "high" } as object)} decoding="async" className="aspect-[4/5] w-full object-cover object-top" />
             </div>
           </div>
-          <div data-reveal="right" className="text-center md:text-left">
+          <div className="enter-right text-center md:text-left">
             <p className="eyebrow text-white/85">Trajetória e formação</p>
             <h1 className="mt-3 font-serif text-4xl leading-tight text-white md:text-5xl [text-shadow:0_1px_8px_rgba(24,55,44,0.35)]">{clinic.name}</h1>
             <p className="mt-3 text-[15px] font-medium text-[#f7e8cc]">Psicanalista · Niterói (Itaipu) e online</p>
             <p className="mt-5 text-[15px] font-medium leading-relaxed text-white [text-shadow:0_1px_8px_rgba(24,55,44,0.35)]"><Rich text={about.lead} /></p>
             <p className="mt-4 text-[13.5px] leading-[1.75] text-white/95 [text-shadow:0_1px_8px_rgba(24,55,44,0.35)]"><Rich text={about.paragraphs[1]} /></p>
             <div className="mt-7 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center md:justify-start">
-              <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-wine justify-center"><CalendarCheck className="h-4 w-4" /> Agendar horário</a>
+              <a href={clinic.doctoraliaUrl} target="_blank" rel="noopener noreferrer" className="btn-wine justify-center"><CalendarCheck className="h-4 w-4" /> Agendar horário</a>
               <a href="#abordagem" className="inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-white/95 ring-1 ring-white/35 transition hover:bg-white/10">
                 Minha abordagem <ArrowDown className="h-4 w-4" />
               </a>
@@ -194,8 +194,8 @@ export default function Formacao() {
           <h2 className="font-serif text-3xl leading-tight text-white md:text-4xl [text-shadow:0_1px_8px_rgba(24,55,44,0.35)]">Vamos <span className="hl">conversar</span>?</h2>
           <p className="mt-3 text-sm leading-relaxed text-white/95">A primeira conversa é sem compromisso. Escolha o caminho mais confortável para você.</p>
           <div className="mt-7 flex flex-col items-stretch gap-4 sm:flex-row sm:justify-center sm:gap-3">
-            <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-wine justify-center"><CalendarCheck className="h-4 w-4" /> Agendar horário</a>
-            <a href={waLink()} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-white/15 px-6 py-3 text-sm font-medium text-white ring-1 ring-white/35 transition hover:bg-white/25"><WhatsAppIcon /> Falar no WhatsApp</a>
+            <a href={clinic.doctoraliaUrl} target="_blank" rel="noopener noreferrer" className="btn-wine justify-center"><CalendarCheck className="h-4 w-4" /> Agendar horário</a>
+            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-white/15 px-6 py-3 text-sm font-medium text-white ring-1 ring-white/35 transition hover:bg-white/25"><WhatsAppIcon /> Falar no WhatsApp</a>
           </div>
           <Link to="/" className="mt-7 inline-flex items-center gap-2 text-sm text-white/90 underline-offset-4 hover:underline"><ArrowLeft className="h-4 w-4" /> Voltar ao início</Link>
         </div>
