@@ -167,7 +167,7 @@ export default function Formacao() {
                       <div className={thumbs(c).length ? "grid gap-2" : ""}>
                         {[{ label: c.imageLabel, title: c.title, image: c.image }, ...thumbs(c).map((x) => ({ label: x.label, title: `${c.title} · ${x.label}`, image: x.image }))].map((t) => (
                           <button key={t.image} type="button" onClick={() => setOpen({ title: t.title, org: c.org, image: t.image })} aria-label={`Ver certificado: ${t.title}`} className="group relative block w-full overflow-hidden rounded-xl ring-1 ring-teal/20">
-                            <img src={t.image} alt="" loading="lazy" decoding="async" className="h-36 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 sm:h-28" />
+                            <img src={t.image} alt="" loading="lazy" decoding="async" className={`h-36 w-full transition-transform duration-500 group-hover:scale-105 sm:h-28 ${c.fit === "contain" ? "bg-teal-mist object-contain" : "object-cover object-top"}`} />
                             <span className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-teal-deep/75 via-transparent to-transparent pb-2">
                               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-medium text-teal-ink shadow"><Search className="h-3 w-3" /> {t.label ?? "Ver certificado"}</span>
                             </span>

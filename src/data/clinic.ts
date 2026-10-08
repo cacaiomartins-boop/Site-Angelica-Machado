@@ -198,7 +198,8 @@ export const credentials = [
     org: "Universidade Estácio de Sá · Niterói - RJ",
     detail: "Formação acadêmica tradicional, que amplia o olhar sobre pessoas, relações e ambientes de trabalho. Não exerço a profissão.",
     hours: "",
-    image: "/img/cert/rh-estacio.webp",
+    image: "/img/cert/rh-estacio-completo.webp",
+    fit: "contain",
   },
 ];
 
