@@ -154,8 +154,8 @@ export const approach = {
 export const credentials = [
   {
     id: "clinico",
-    period: "Out/2023",
-    title: "Psicanalista Clínico",
+    period: "Mai/2021 – Out/2023",
+    title: "Formação em Psicanálise",
     org: "Sociedade Brasileira de Psicanálise (SBP)",
     detail: "Formação em Psicanálise Clínica, a base de tudo: o estudo de Freud e da clínica psicanalítica, com análise individual e estágio supervisionado. Título de Psicanalista Clínico, amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
     hours: "420h",
@@ -173,7 +173,7 @@ export const credentials = [
   },
   {
     id: "sistemica",
-    period: "Abr/2025 – Nov/2025",
+    period: "Jul/2024 – Nov/2025",
     title: "Formação em Terapia Sistêmica Familiar",
     org: "Academia Internacional de Ciências Sistêmicas (AICS)",
     detail: "Níveis Básico e Avançado · formação híbrida (presencial e EAD). Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
