@@ -45,7 +45,7 @@ export function jsonLd(page: PageKey) {
     jobTitle: "Psicanalista",
     url: `${SITE}/formacao`,
     image: OG_IMAGE,
-    knowsAbout: ["Psicanálise", "Análise Junguiana", "Terapia Sistêmica Familiar", "Luto"],
+    knowsAbout: ["Psicanálise", "Análise Junguiana", "Terapia Sistêmica", "Luto"],
     worksFor: { "@id": `${SITE}/#consultorio` },
   };
   const graph: object[] = [org, person];

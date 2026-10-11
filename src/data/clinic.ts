@@ -53,7 +53,7 @@ export const about = {
   training: [
     "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
     "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES",
-    "Tenho formação em Terapia Sistêmica Familiar, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
+    "Tenho formação em Terapia Sistêmica, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
@@ -62,7 +62,7 @@ export const about = {
 
 export const services = [
   { title: "Consulta Psicanalítica Junguiana", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Aprofundamento na interpretação dos conteúdos inconscientes, tratamento de ansiedade, depressão, fobias e fortalecimento da autonomia emocional.", mode: "Presencial em Niterói (Itaipu) e online" },
-  { title: "Terapia sistêmica familiar", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial em Niterói (Itaipu) e online" },
+  { title: "Terapia sistêmica", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Compreende a pessoa dentro dos sistemas relacionais dos quais ela faz parte — principalmente a família — considerando que seus comportamentos, emoções e dificuldades podem estar relacionados às dinâmicas, vínculos, padrões e histórias familiares.", mode: "Presencial em Niterói (Itaipu) e online" },
   { title: "Suporte ao Luto e Luto Pet", price: "R$ 150", priceNote: "Sessão avulsa", unit: "50 min · Semanal", packageNote: "Pacote mensal: sob consulta", text: "Espaço de acolhimento sensível para a dor da perda de pessoas queridas ou de animais de estimação, validando sentimentos sem julgamentos.", mode: "Presencial em Niterói (Itaipu) e online" },
 ];
 
@@ -174,7 +174,7 @@ export const credentials = [
   {
     id: "sistemica",
     period: "Jul/2024 – Nov/2025",
-    title: "Formação em Terapia Sistêmica Familiar",
+    title: "Formação em Terapia Sistêmica",
     org: "Academia Internacional de Ciências Sistêmicas (AICS)",
     detail: "Níveis Básico e Avançado · formação híbrida (presencial e EAD). Foco na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
     hours: "400h",

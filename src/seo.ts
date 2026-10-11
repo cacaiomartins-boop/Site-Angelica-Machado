@@ -12,7 +12,7 @@ export const PAGES: Record<PageKey, { path: string; title: string; description: 
   formacao: {
     path: "/formacao",
     title: "Formação e trajetória | Angélica Thiengo Machado – Psicanalista em Niterói",
-    description: "Conheça a formação de Angélica Thiengo Machado: Psicanalista Clínico (SBP, 420h), Especialização Junguiana (360h), Formação em Terapia Sistêmica Familiar (400h) e a sua abordagem clínica.",
+    description: "Conheça a formação de Angélica Thiengo Machado: Psicanalista Clínico (SBP, 420h), Especialização Junguiana (360h), Formação em Terapia Sistêmica (400h) e a sua abordagem clínica.",
   },
 };
 
