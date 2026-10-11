@@ -45,7 +45,7 @@ export const about = {
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
-    "Atuo com base na **análise Junguiana** e na **abordagem sistêmica familiar**, duas lentes que se complementam para olhar a sua mente profunda sem esquecer o contexto e a história de onde você veio.",
+    "Atuo com base na **análise Junguiana** e na **abordagem sistêmica**, duas lentes que se complementam para olhar a sua mente profunda sem esquecer o contexto e a história de onde você veio.",
     "O atendimento é estruturado tanto de forma presencial no Espaço Terapêutico Equilíbrio e Afeto, em Niterói, quanto **online** via Google Meet com flexibilidade para pacientes em todo o Brasil e no exterior.",
   ],
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
@@ -86,7 +86,7 @@ export const testimonials = [
 
 // TODO: confirmar/ajustar as respostas (só a primeira veio do layout aprovado)
 export const faq = [
-  { q: "Como funciona a minha abordagem clínica?", a: "No meu consultório, o seu processo terapêutico é conduzido através de duas grandes lentes que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica familiar.\n\nAtravés da visão de Carl Jung, mergulhamos no seu inconsciente, olhando para os seus sonhos, complexos e o seu processo de busca por quem você realmente é (individuação).\n\nParalelamente, com a minha formação pela Academia Internacional de Ciências Sistêmicas, trago o olhar da terapia sistêmica.\n\nUnir essas duas frentes significa olhar para a sua mente profunda sem esquecer o contexto e a história de onde você veio. É um convite para decifrar a si mesmo e se reconciliar com as suas raízes." },
+  { q: "Como funciona a minha abordagem clínica?", a: "No meu consultório, o seu processo terapêutico é conduzido através de duas grandes lentes que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica.\n\nAtravés da visão de Carl Jung, mergulhamos no seu inconsciente, olhando para os seus sonhos, complexos e o seu processo de busca por quem você realmente é (individuação).\n\nParalelamente, com a minha formação pela Academia Internacional de Ciências Sistêmicas, trago o olhar da terapia sistêmica.\n\nUnir essas duas frentes significa olhar para a sua mente profunda sem esquecer o contexto e a história de onde você veio. É um convite para decifrar a si mesmo e se reconciliar com as suas raízes." },
   { q: "Qual a diferença entre psicanálise e terapia tradicional?", a: "A psicanálise vai além dos sintomas imediatos: ela busca compreender a origem inconsciente dos sentimentos, traumas e padrões repetitivos que você vive, promovendo uma transformação duradoura." },
   { q: "Como funcionam as sessões?", a: "As sessões têm duração de 50 minutos. Na primeira consulta conhecemos sua história e suas principais queixas, e a partir dela combinamos o ritmo do acompanhamento, geralmente semanal." },
   { q: "Você atende online? Funciona tão bem quanto presencial?", a: "Sim. O atendimento online é feito por Google Meet, com a mesma escuta e profundidade do presencial, e atende pacientes em todo o Brasil e no exterior." },
@@ -132,7 +132,7 @@ export const infoCard = {
 export const approach = {
   eyebrow: "Minha abordagem",
   title: "Como funciona a minha abordagem clínica?",
-  intro: "No meu consultório, o seu processo terapêutico é conduzido através de **duas grandes lentes** que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica familiar.",
+  intro: "No meu consultório, o seu processo terapêutico é conduzido através de **duas grandes lentes** que se complementam perfeitamente: a análise Junguiana e a abordagem sistêmica.",
   lenses: [
     {
       kicker: "A lente da mente profunda",
@@ -142,7 +142,7 @@ export const approach = {
     },
     {
       kicker: "A lente das suas raízes",
-      name: "Abordagem sistêmica familiar",
+      name: "Abordagem sistêmica",
       text: "Paralelamente, com a minha formação pela Academia Internacional de Ciências Sistêmicas, trago o olhar da terapia sistêmica: a compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
       chips: ["Indivíduos", "Casais", "Famílias"],
     },

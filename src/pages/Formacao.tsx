@@ -14,7 +14,7 @@ type Viewer = { title: string; org: string; image: string };
 function Venn() {
   return (
     <div data-reveal="zoom" className="mx-auto w-full max-w-[420px]">
-      <svg viewBox="0 0 420 300" role="img" aria-label="Duas lentes, a análise Junguiana e a abordagem sistêmica familiar, que se encontram em você" className="h-auto w-full drop-shadow-xl">
+      <svg viewBox="0 0 420 300" role="img" aria-label="Duas lentes, a análise Junguiana e a abordagem sistêmica, que se encontram em você" className="h-auto w-full drop-shadow-xl">
         <defs>
           <clipPath id="lensA"><circle cx="150" cy="150" r="112" /></clipPath>
         </defs>
