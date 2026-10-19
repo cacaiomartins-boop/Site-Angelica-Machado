@@ -12,7 +12,7 @@ export const clinic = {
   mapsUrl: "https://www.google.com/maps/place/Espa%C3%A7o+Terap%C3%AAutico+Equil%C3%ADbrio+e+Afeto/data=!4m2!3m1!1s0x0:0x8ce8f80c33d4f44a?sa=X&ved=1t:2428&ictx=111",
   // Link oficial do Google Meu Negócio que abre direto a tela de escrever avaliação.
   googleReviewUrl: "https://g.page/r/CUr01DMM-OiMEAI/review",
-  address: "Avenida Ewerton Xavier, 2101/sl. 227 - Itaipu - Niterói-RJ · CEP 24340-105 · Shopping Ibiza",
+  address: "Avenida Ewerton Xavier, 2101 - Itaipu - Niterói-RJ · CEP 24340-105 · Shopping Ibiza",
   office: "Espaço Terapêutico Equilíbrio e Afeto",
   mapEmbed: "https://www.google.com/maps?q=Avenida+Ewerton+Xavier+2101+Shopping+Ibiza+Itaipu+Niteroi+RJ&output=embed",
   // Vídeo POV do consultório: coloque o arquivo em public/video/consultorio.mp4
@@ -100,7 +100,7 @@ export const faq = [
 export const modalities = [
   "Presencial: Niterói - RJ (Itaipu, com estacionamento e acessibilidade)",
   "Online: Todo o Brasil e brasileiros no exterior via Google Meet",
-  "Atendimento para adultos e suporte especializado ao luto",
+  "Atendimento para adultos e suporte especializado ao luto, exclusivo mediante agendamento prévio",
 ];
 
 export const waLink = (msg = clinic.whatsappMessage) =>

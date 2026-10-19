@@ -26,7 +26,7 @@ export function jsonLd(page: PageKey) {
     telephone: `+${clinic.whatsapp}`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Avenida Ewerton Xavier, 2101, sala 227 – Shopping Ibiza",
+      streetAddress: "Avenida Ewerton Xavier, 2101 – Shopping Ibiza",
       addressLocality: "Niterói",
       addressRegion: "RJ",
       postalCode: "24340-105",

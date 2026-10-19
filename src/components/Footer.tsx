@@ -19,6 +19,7 @@ export default function Footer() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-wine shadow-sm"><MapPin className="h-5 w-5" strokeWidth={1.6} /></span>
                 <span>
                   <span className="block text-sm leading-snug text-teal-ink">{clinic.address}</span>
+                  <span className="mt-1 block text-sm font-medium leading-snug text-teal-ink">Atendimento exclusivo mediante agendamento prévio.</span>
                   <span className="mt-1 block text-xs font-medium text-wine group-hover:underline">Abrir no Google Maps →</span>
                 </span>
               </a>
