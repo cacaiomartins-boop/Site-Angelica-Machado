@@ -2,7 +2,7 @@
 export const clinic = {
   name: "Angélica Thiengo Machado",
   role: "Psicanalista",
-  registry: "CBPC 2022-6891",
+  registry: "SBP/ES 21000234",
   // Telefone do perfil no Doctoralia: (21) 99731-8544
   whatsapp: "5521997318544",
   whatsappMessage: "Olá, Angélica! Vim pelo seu site e gostaria de agendar uma consulta.",
@@ -28,7 +28,7 @@ export const clinic = {
   },
 };
 
-export const heroBadges = ["26 avaliações Doctoralia (Nota 5.0)", "Registro CBPC 2022-6891", "Desde 2021"];
+export const heroBadges = ["26 avaliações Doctoralia (Nota 5.0)", "Registro SBP/ES 21000234", "Desde 2021"];
 
 export const symptoms = [
   { icon: "heart", title: "Crises de Ansiedade e Pânico", text: "A sensação constante de aperto no peito, pensamentos acelerados e o medo recorrente de perder o controle." },
@@ -41,7 +41,7 @@ export const symptoms = [
 
 export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
-  lead: "Psicanalista clínica, com especialização **Junguiana**, associada ao **Conselho Brasileiro de Psicanálise Clínica (CBPC 2022-6891)**, dedicada a um atendimento humano, empático e de **total sigilo**.",
+  lead: "Psicanalista clínica, com especialização **Junguiana** e registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
@@ -51,10 +51,10 @@ export const about = {
   quote: "Domine todas teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra **alma humana**.",
   quoteAuthor: "Carl G. Jung",
   training: [
-    "Formação em Psicanálise Clínica · Conselho Brasileiro de Psicanálise Clínica (CBPC)",
-    "Especialização Junguiana · Conselho Brasileiro de Psicanálise Clínica (CBPC)",
+    "Formação em Psicanálise Clínica · Sociedade Brasileira de Psicanálise-ES",
+    "Especialização Junguiana · Sociedade Brasileira de Psicanálise-ES",
     "Tenho formação em Terapia Sistêmica, pela Academia Internacional de Ciências Sistêmicas, em que o foco é na compreensão de indivíduos, casais e famílias a partir de seus contextos relacionais.",
-    "Curso de Terapia Transpessoal e Interpretação dos Sonhos · CBPC",
+    "Curso de Terapia Transpessoal e Interpretação dos Sonhos · SBP-ES",
     "Curso Superior de Tecnologia em Gestão de Recursos Humanos · Universidade Estácio de Sá, Niterói - RJ",
   ],
   tags: ["Psicanálise Clínica", "Análise Junguiana", "Terapia Transpessoal", "Interpretação dos Sonhos", "Acompanhamento Terapêutico", "Luto por Pets", "Gestão de Pessoas (RH)"],
@@ -156,7 +156,7 @@ export const credentials = [
     id: "clinico",
     period: "Mai/2021 – Out/2023",
     title: "Formação em Psicanálise",
-    org: "Conselho Brasileiro de Psicanálise Clínica (CBPC)",
+    org: "Sociedade Brasileira de Psicanálise (SBP)",
     detail: "Formação em Psicanálise Clínica, a base de tudo: o estudo de Freud e da clínica psicanalítica, com análise individual e estágio supervisionado. Título de Psicanalista Clínico, amparado pela Classificação Brasileira de Ocupações (CBO 2515-50).",
     hours: "420h",
     image: "/img/cert/psicanalista-clinico.webp",
@@ -166,7 +166,7 @@ export const credentials = [
     id: "junguiana",
     period: "Mar/2024 – Fev/2026",
     title: "Especialização Junguiana",
-    org: "Conselho Brasileiro de Psicanálise Clínica (CBPC)",
+    org: "Sociedade Brasileira de Psicanálise (SBP)",
     detail: "Especialização que aprofunda a psicanálise a partir de Jung · título de Especialista Junguiano.",
     hours: "360h",
     image: "/img/cert/junguiana.webp",
@@ -186,7 +186,7 @@ export const credentials = [
     id: "transpessoal",
     period: "Complementar",
     title: "Terapia Transpessoal e Interpretação dos Sonhos",
-    org: "Conselho Brasileiro de Psicanálise Clínica (CBPC)",
+    org: "Sociedade Brasileira de Psicanálise-ES",
     detail: "Cursos complementares que ampliam a escuta clínica.",
     hours: "",
     image: "",

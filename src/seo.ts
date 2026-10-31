@@ -7,12 +7,12 @@ export const PAGES: Record<PageKey, { path: string; title: string; description: 
   home: {
     path: "/",
     title: "Angélica Thiengo Machado | Psicanalista em Niterói e Online",
-    description: "Psicanalista clínica associada ao CBPC (2022-6891) em Niterói (Itaipu) e online. Acolhimento e escuta para ansiedade, luto, relacionamentos e autoestima.",
+    description: "Psicanalista clínica (SBP/ES 21000234) em Niterói (Itaipu) e online. Acolhimento e escuta para ansiedade, luto, relacionamentos e autoestima.",
   },
   formacao: {
     path: "/formacao",
     title: "Formação e trajetória | Angélica Thiengo Machado – Psicanalista em Niterói",
-    description: "Conheça a formação de Angélica Thiengo Machado: Psicanalista Clínico (CBPC, 420h), Especialização Junguiana (360h), Formação em Terapia Sistêmica (400h) e a sua abordagem clínica.",
+    description: "Conheça a formação de Angélica Thiengo Machado: Psicanalista Clínico (SBP, 420h), Especialização Junguiana (360h), Formação em Terapia Sistêmica (400h) e a sua abordagem clínica.",
   },
 };
 
