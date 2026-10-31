@@ -7,7 +7,7 @@ export const PAGES: Record<PageKey, { path: string; title: string; description: 
   home: {
     path: "/",
     title: "Angélica Thiengo Machado | Psicanalista em Niterói e Online",
-    description: "Psicanalista clínica (SBP/ES 21000234) em Niterói (Itaipu) e online. Acolhimento e escuta para ansiedade, luto, relacionamentos e autoestima.",
+    description: "Psicanalista clínica associada ao CBPC (2022-6891) em Niterói (Itaipu) e online. Acolhimento e escuta para ansiedade, luto, relacionamentos e autoestima.",
   },
   formacao: {
     path: "/formacao",

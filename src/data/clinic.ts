@@ -2,7 +2,7 @@
 export const clinic = {
   name: "Angélica Thiengo Machado",
   role: "Psicanalista",
-  registry: "SBP/ES 21000234",
+  registry: "CBPC 2022-6891",
   // Telefone do perfil no Doctoralia: (21) 99731-8544
   whatsapp: "5521997318544",
   whatsappMessage: "Olá, Angélica! Vim pelo seu site e gostaria de agendar uma consulta.",
@@ -28,7 +28,7 @@ export const clinic = {
   },
 };
 
-export const heroBadges = ["26 avaliações Doctoralia (Nota 5.0)", "Registro SBP/ES 21000234", "Desde 2021"];
+export const heroBadges = ["26 avaliações Doctoralia (Nota 5.0)", "Registro CBPC 2022-6891", "Atuando desde 2021"];
 
 export const symptoms = [
   { icon: "heart", title: "Crises de Ansiedade e Pânico", text: "A sensação constante de aperto no peito, pensamentos acelerados e o medo recorrente de perder o controle." },
@@ -41,7 +41,7 @@ export const symptoms = [
 
 export const about = {
   title: "Olá, sou **Angélica** Thiengo Machado",
-  lead: "Psicanalista clínica, com especialização **Junguiana** e registro SBP/ES 21000234, dedicada a um atendimento humano, empático e de **total sigilo**.",
+  lead: "Psicanalista clínica, com especialização **Junguiana**, associada ao **Conselho Brasileiro de Psicanálise Clínica (CBPC 2022-6891)**, dedicada a um atendimento humano, empático e de **total sigilo**.",
   paragraphs: [
     "Também sou formada em **Gestão de Recursos Humanos** pela Universidade Estácio de Sá, em Niterói - RJ, o que amplia meu olhar sobre pessoas, relações e ambientes de trabalho.",
     "Minha missão como Psicanalista é promover o **autoconhecimento** e o equilíbrio emocional, acolhendo a história de cada paciente e interpretando os conteúdos inconscientes de palavras, ações e sonhos.",
@@ -190,6 +190,15 @@ export const credentials = [
     detail: "Cursos complementares que ampliam a escuta clínica.",
     hours: "",
     image: "",
+  },
+  {
+    id: "cbpc",
+    period: "Associação",
+    title: "Certificado de Associação",
+    org: "Conselho Brasileiro de Psicanálise Clínica (CBPC)",
+    detail: "Certificado que comprova a associação ao Conselho Brasileiro de Psicanálise Clínica · Psicanalista CBPC 2022-6891.",
+    hours: "",
+    image: "/img/cert/associacao-cbpc.jpg",
   },
   {
     id: "rh",

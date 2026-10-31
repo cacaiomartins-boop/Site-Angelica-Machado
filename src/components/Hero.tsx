@@ -24,7 +24,7 @@ export default function Hero() {
               </div>
             ))}
           </dl>
-          <p className="mt-6 border-t border-white/15 pt-4 text-[11px] text-[#ebf6ef]">{clinic.registry} · Desde 2021</p>
+          <p className="mt-6 border-t border-white/15 pt-4 text-[11px] text-[#ebf6ef]">{clinic.registry} · Atuando desde 2021</p>
         </aside>
 
         <div className="text-center md:order-1 md:text-left">
